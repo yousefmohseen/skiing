@@ -1,0 +1,358 @@
+*{
+	box-sizing:border-box;
+	margin:0px;
+	padding:0px;
+	font-family: "Cabin", sans-serif;
+}
+
+header{
+	height: 100vh;
+	background-image: url(../images/header-bg.png);
+	background-size: 100% 120%;
+	background-position:center;
+	color: rgb(49,59,76);
+}
+nav{
+	padding: 20px 70px;
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+}
+nav div{
+	display: flex;
+	gap: 70px;
+	align-items: center;
+}
+nav div ul{
+	list-style: none;
+	display:flex;
+	gap: 30px;
+}	
+.active{
+	color: rgb(222,65,50);
+}
+.btn-prim{
+	padding: 15px 40px;
+	background-color:rgb(222,65,50);
+	color: rgb(255, 255, 255);
+	outline: none;
+	border: none;
+	border-radius: 5px;
+}
+.btn-sec{
+	padding: 15px 40px;
+	background-color: rgb(255, 255, 255);
+	color:rgb(222,65,50);
+	outline: none;
+	border: none;
+	border-radius: 5px;
+}
+.bb{
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid lightgray;
+}
+.hero{
+	padding: 0px 70px;
+}
+.hero h1{
+	max-width: 525px;
+    margin: 60px 0px 10px 0px;
+    font-size: 63px;
+}
+.hero p{
+	max-width: 540px;
+	margin: 20px 0px;
+}
+.hero div{
+	display: flex;
+	gap: 20px;
+}
+main,footer{
+	text-align: center;
+	color: rgb(49,59,76);
+}
+h1{
+	font-size:40px;
+}
+main section:nth-child(1){
+	padding: 75px 70px;
+	background-color: rgb(254, 249, 249);
+}
+main section:nth-child(1) h1{
+	margin-bottom: 50px;
+}
+main section:nth-child(1) div{
+	display: flex;
+	justify-content: space-around;
+}
+main section:nth-child(2){
+	padding: 100px 70px;
+}
+main section:nth-child(2) h1{
+	margin-bottom: 60px;
+}
+div.cards{
+	text-align: left;
+	display: flex;
+	justify-content: space-between;
+}
+div.cards div.card{
+	width: 380px;
+}
+div.card img{
+	height: 270px;
+}
+div.card h2{
+	margin: 20px 0px;
+}
+div.card p{
+	margin-bottom: 20px;
+}
+div.card a{
+	color:rgb(222,65,50);
+	text-decoration: none;
+}
+
+div.cards1 div.card1{
+	display: flex;
+}
+div.card1 img{
+	height: 80px;
+	width: 110px;
+}
+div.card1 div{
+	margin:auto 10px;
+}
+div.card1 h2{
+	margin: 0px;
+	font-size: 20px;
+}
+main section:nth-child(3){
+	height: 320px;
+	background-image: url(../images/banner.png);
+	background-repeat: no-repeat;
+	background-size: 100% 125%;
+	background-position: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 15px;
+}
+main section:nth-child(3) h1{
+	color: white;
+}
+main section:nth-child(3) p{
+	color: white;
+}
+main section:nth-child(4){
+	padding: 100px 70px;
+}
+main section:nth-child(4) h1{
+	margin-bottom: 50px;
+	text-align: left;
+}
+main section:nth-child(4) div.card img{
+	border-radius: 10px;
+}
+main section:nth-child(5){
+	background-color: rgb(254, 249, 249);
+	padding: 60px 70px;
+	border-bottom: 1px solid lightgray;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+main section:nth-child(5) div{
+	width: 500px;
+	text-align: left;
+}
+main section:nth-child(5) h6{
+	margin-bottom: 20px;
+	color: rgb(252, 177, 88);
+}
+main section:nth-child(5) h1{
+	width: 430px;
+	margin-bottom: 20px;
+}
+main section:nth-child(5) .input{
+	width: 100%;
+	padding: 15px;
+	margin-bottom: 15px;
+	background-color: rgb(242, 243, 244);
+	outline: none;
+	border: none;
+	border-radius: 10px;
+}
+footer{
+	margin: 20px;
+	font-size: 11px;
+}
+
+
+@media screen and (max-width: 998px){
+	header{
+		background-size: 100% 100%;
+	}
+	nav{
+		padding: 10px 30px;
+	}
+	nav img{
+		width:150px;
+	}
+	.btn-prim{
+		padding: 7.5px 30px;
+		font-size:12px;
+		font-weight:bold;
+	}
+	.btn-sec{
+		padding: 7.5px 30px;
+		font-size:12px;
+		font-weight:bold;
+	}
+	.hero{
+		padding: 0px 30px;
+		text-shadow:1px 1px .5px white,-1px -1px .5px white;
+	}
+	.hero h1{
+		margin-top:300px;
+		font-size: 30px;
+	}
+	main section{
+		padding: 70px 30px;
+	}
+	main section h1{
+		margin-bottom: 40px;
+		font-size: 30px;
+	}
+	main section:nth-child(1) div{
+		flex-wrap:wrap;
+		gap:10px;
+	}
+	div.cards{
+		justify-content:center;
+		gap:10px;
+	}
+	div.cards div.card{
+		width:306px;
+	}
+	div.card img{
+		width:100%;
+	}
+	div.card h2{
+		font-size:16px;
+	}
+	div.card1 img{
+		width:90px;
+	}
+	div.card1 h2{
+		font-size: 16px;
+	}
+	div.card1 text{
+		font-size: 12px;
+	}
+	main section:nth-child(3){
+		background-size: 100% 100%;
+	}
+
+	main section:nth-child(5) div,
+	main section:nth-child(5) h1{
+		max-width: 350px;
+	}
+	main section:nth-child(5) .input{
+		padding: 10px;
+	}
+	footer{
+		margin: 12px;
+	}
+}
+
+
+@media screen and (max-width: 699px){
+	nav{
+		padding: 10px 20px;
+	}
+	nav img{
+		width:120px;
+	}
+	nav div ul{
+		display:none;
+	}	
+	.btn-prim{
+		padding: 5px 20px;
+	}
+	.btn-sec{
+		padding: 5px 20px;
+	}
+	.hero{
+		padding: 0px 20px;
+	}
+	.hero h1{
+		margin-top:55vh;
+	}
+	main section{
+		padding: 50px 20px;
+	}
+	h1{
+		font-size: 20px;
+	}
+	section h1{
+		margin-bottom: 30px;
+	}
+	div.cards{
+		flex-direction:column;
+		align-items:center;
+	}
+	div.cards div.card{
+		width:350px;
+		margin-bottom:20px;
+	}
+	div.card h2{
+	margin: 15px 0px;
+	font-size: 20px;
+	}
+	div.card p{
+	margin-bottom: 15px;
+	}	
+	div.card1 img{
+	height: 80px;
+	width: 110px;
+	}
+	div.card1 h2{
+	margin: 0px;
+	}
+	div.card1 text{
+	font-size: 12px;
+	}
+	main section:nth-child(1) div img{
+		width: 60%;
+	}
+	main section:nth-child(5){
+		flex-direction:column;
+		justify-content: center;
+		align-items: center;
+	}
+	main section:nth-child(5) div p{
+		margin-bottom:25px;
+	}
+	main section:nth-child(5) .input{
+		padding: 8px;
+	}
+	footer{
+		margin: 10px;
+	}
+}
+@media screen and (max-width: 359px){
+	header,main,footer{
+		display:none;
+	}
+	body::after {
+		content: "Your device screen is too small. Please open the site on a larger device screen to view the site well. \A Thank you";
+		display:flex;
+		justify-content:center;
+		align-items:center;
+		padding:100px 20px;
+		font-weight:bold;
+	}
+}
